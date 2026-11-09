@@ -1,14 +1,16 @@
 # PBKK — Personal Website (Tugas 4 & Tugas 10)
 
-NRP: **5025241089** · S1 Teknik Informatika ITS
+Nama : Rhea Debora Sianturi 
+NRP: **5025241089** 
 
 Mini-website akademik individu berbasis Laravel untuk Tugas 4 PBKK. Website ini memuat profil akademik, rancangan Agentic AI, serta formulir masukan. Implementasinya mempraktikkan Blade templating, master layout, reusable components, passing data dari controller, serta bundling Tailwind melalui Vite.
 
 Tugas 10 menambahkan backoffice AdminLTE di `/admin` yang diamankan login Laravel Breeze dan otorisasi Spatie Permission berbasis database.
 
-##Visual
+## Visual
 
 Dashboard
+
 <img width="930" height="378" alt="Screenshot 2026-11-09 163313" src="https://github.com/user-attachments/assets/a167fc56-1197-4fe4-8d57-3039e81b669e" />
 
 Dashboard Admin
