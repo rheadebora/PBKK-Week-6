@@ -6,6 +6,14 @@ Mini-website akademik individu berbasis Laravel untuk Tugas 4 PBKK. Website ini 
 
 Tugas 10 menambahkan backoffice AdminLTE di `/admin` yang diamankan login Laravel Breeze dan otorisasi Spatie Permission berbasis database.
 
+##Visual
+
+Dashboard
+<img width="930" height="378" alt="Screenshot 2026-11-09 163313" src="https://github.com/user-attachments/assets/a167fc56-1197-4fe4-8d57-3039e81b669e" />
+
+Dashboard Admin
+<img width="926" height="397" alt="Screenshot 2026-11-09 161133" src="https://github.com/user-attachments/assets/e6c5eeb6-40af-4b25-ad0a-d33a680fd195" />
+
 ## Menjalankan
 
 PHP 8.3+ dan Composer diperlukan. Dari folder proyek:
@@ -142,24 +150,4 @@ php artisan test
 php vendor/bin/pint --test app/Http/Controllers app/Models/User.php database/seeders routes/web.php tests/Feature/AdminDashboardTest.php tests/Feature/AdminUserSearchTest.php
 ```
 
-Seluruh test (termasuk auth Breeze dan otorisasi admin) harus lulus sebelum demo.
-
-## Demo maksimal 3 menit
-
-1. Tunjukkan master layout, lalu buka `/`, `/profil-mahasiswa`, dan `/ide-agent/dast`.
-2. Tunjukkan `<x-info-card>`, `<x-status-banner>`, dan formulir masukan.
-3. Buka `/ide-agent?mode=dark` dan `/beranda?user=Andi` untuk menunjukkan dua challenge.
-4. Buka `/admin` sebagai guest untuk menunjukkan redirect ke `/login`, lalu masuk dengan akun demo dan tunjukkan tiga widget `count()` di dashboard AdminLTE.
-5. Buka `/admin/users`, cari nama/email, lalu gabungkan filter role untuk menunjukkan kueri `when()` serta query string yang dipertahankan saat pagination.
-6. Jalankan `npm run build`, `php artisan route:list --path=admin`, dan `php artisan test --filter=AdminUserSearchTest`.
-
-Unggah tautan repository publik ke LMS paling lambat H-1 jadwal perkuliahan minggu depan. Siapkan demo acak maksimal 3 menit pada awal Pertemuan 5. `.env` dan `vendor/` dikecualikan melalui `.gitignore`.
-
-## Tampilan dan navigasi
-
-Mode terang/gelap tersedia dari tombol di header. Pilihan disimpan di browser; kunjungan pertama mengikuti tema perangkat. Tampilan memakai konsep personal field journal dengan palet biru-kuning: tumpukan surat interaktif di Home, halaman proyek berbentuk studi editorial, koleksi seperti rak spesimen, blog sebagai indeks catatan, dan kalkulator sebagai lembar kerja dua panel. Header menampilkan monogram R, nama, dan NRP. Navigasi internal memakai transisi halaman tanpa reload dan mendukung tombol Back/Forward.
-
-Animasi mengikuti aksi pengguna dan kemunculan konten, bukan loop dekoratif. Pembaca surat memakai native dialog dan mendukung Escape serta tombol panah. Cursor desktop meninggalkan guratan tinta kecil pada mode terang dan glint hangat pada mode gelap; efek dimatikan pada layar sentuh dan preferensi reduced motion. Catatan referensi dan keputusan desain tersedia di [`docs/design/UI_REDESIGN.md`](docs/design/UI_REDESIGN.md).
-
-Riset desain mencakup **4.526 listing Awwwards**, audit HTML pada **2.400 homepage unik** dengan **2.085 respons HTTP 2xx**, dan sampel visual terpisah 24 entri (15 dapat dinilai secara visual, dua hanya termuat sebagian, empat tidak tersedia, satu listing tanpa tautan tujuan, dan dua tujuan tidak dibuka). Audit HTML bukan peninjauan visual setiap situs. Metode, temuan, serta batasannya ada di [`docs/research/portfolio-homepage-audit.md`](docs/research/portfolio-homepage-audit.md) dan [`docs/research/portfolio-live-review.md`](docs/research/portfolio-live-review.md).
 
