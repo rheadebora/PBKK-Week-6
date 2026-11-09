@@ -1,0 +1,18 @@
+@import 'tailwindcss';
+@import '../../public/css/portfolio.css';
+@import '../../public/css/motion.css';
+@import '../../public/css/editorial.css';
+@import './studio.css';
+@import './inner-studio.css';
+@import './interactions.css';
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../**/*.blade.php';
+@source not '../views/welcome.blade.php';
+@source '../**/*.js';
+
+@theme {
+    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+        'Segoe UI Symbol', 'Noto Color Emoji';
+}
